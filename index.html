@@ -4,10 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DERMOVA — Berjalan Bebas, Dilindungi Inovasi Alam Nusantara</title>
+    <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Lucide Icons -->
     <script src="https://unpkg.com/lucide@latest"></script>
     
     <script>
@@ -64,11 +67,6 @@
             background-color: #FAF8F3;
             color: #23211E;
         }
-        .soft-card {
-            background: rgba(255, 255, 255, 0.88);
-            backdrop-filter: blur(12px);
-            border: 1px solid rgba(216, 206, 188, 0.7);
-        }
         .straw-badge {
             background: linear-gradient(135deg, #FEF8EB 0%, #F8EACB 100%);
             border: 1px solid rgba(212, 155, 68, 0.35);
@@ -80,9 +78,7 @@
     <header class="fixed top-0 left-0 right-0 z-50 bg-[#FAF8F3]/90 backdrop-blur-md border-b border-cream-200">
         <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
             <a href="#" class="flex items-center gap-2.5">
-                <div class="w-8 h-8 rounded-full bg-botanical text-white flex items-center justify-center font-serif text-base font-bold shadow-sm">
-                    D
-                </div>
+                <div class="w-8 h-8 rounded-full bg-botanical text-white flex items-center justify-center font-serif text-base font-bold shadow-sm">D</div>
                 <span class="font-serif text-2xl font-bold tracking-tight text-botanical-dark">DERMOVA</span>
             </a>
 
@@ -100,12 +96,12 @@
         </div>
     </header>
 
+    <!-- HERO SECTION -->
     <section class="pt-32 pb-16 md:pt-40 md:pb-24 relative overflow-hidden">
         <div class="absolute top-1/4 left-6 w-96 h-96 bg-botanical-100/70 rounded-full blur-3xl pointer-events-none -z-10"></div>
         <div class="absolute bottom-10 right-10 w-96 h-96 bg-straw-light rounded-full blur-2xl pointer-events-none -z-10"></div>
 
         <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-            
             <div class="lg:col-span-7 space-y-6">
                 <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full straw-badge text-straw-dark text-xs font-semibold shadow-sm">
                     <i data-lucide="sprout" class="w-4 h-4 text-straw"></i>
@@ -148,11 +144,8 @@
 
             <div class="lg:col-span-5 relative flex justify-center">
                 <div class="relative w-full max-w-md bg-cream-card border border-cream-300 p-8 rounded-[32px] shadow-xl space-y-6">
-                    
                     <div class="flex items-center justify-between">
-                        <span class="px-3 py-1 bg-botanical text-white text-[11px] font-bold rounded-full uppercase tracking-wider">
-                            Wearable Biomedis
-                        </span>
+                        <span class="px-3 py-1 bg-botanical text-white text-[11px] font-bold rounded-full uppercase tracking-wider">Wearable Biomedis</span>
                         <div class="flex items-center gap-1.5 text-xs text-straw-dark font-medium">
                             <i data-lucide="leaf" class="w-4 h-4 text-botanical"></i> Bio-Homeostasis
                         </div>
@@ -168,16 +161,14 @@
                         <i data-lucide="quote" class="w-5 h-5 text-straw shrink-0 mt-0.5"></i>
                         <span>"Mengembalikan kebebasan berjalan bagi penderita diabetes di masa usia produktif tanpa dihantui ketakutan komplikasi ulkus."</span>
                     </div>
-
                 </div>
             </div>
-
         </div>
     </section>
 
+    <!-- SECTION: KISAH -->
     <section id="kisah" class="py-20 bg-cream-100/60 border-y border-cream-200">
         <div class="max-w-6xl mx-auto px-6">
-            
             <div class="max-w-3xl mb-14">
                 <span class="text-xs font-bold uppercase tracking-widest text-botanical">Kesehatan & Kualitas Hidup</span>
                 <h2 class="font-serif text-3xl sm:text-4xl text-charcoal mt-2 font-normal">
@@ -189,7 +180,6 @@
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                
                 <div class="bg-white p-8 rounded-3xl border border-stone-200 shadow-sm space-y-4 opacity-85">
                     <div class="inline-flex items-center gap-2 text-xs font-bold text-red-700 bg-red-50 px-3 py-1 rounded-full">
                         <i data-lucide="alert-triangle" class="w-3.5 h-3.5"></i> Pendekatan Konvensional (Kuratif)
@@ -233,15 +223,13 @@
                         </li>
                     </ul>
                 </div>
-
             </div>
-
         </div>
     </section>
 
+    <!-- SECTION: SIRKULAR -->
     <section id="sirkular" class="py-20 relative overflow-hidden">
         <div class="max-w-6xl mx-auto px-6">
-            
             <div class="text-center max-w-3xl mx-auto mb-16 space-y-3">
                 <span class="text-xs font-bold uppercase tracking-widest text-straw-dark">VALORISASI BIOMASSA PERTANIAN NUSANTARA</span>
                 <h2 class="font-serif text-3xl sm:text-4xl text-charcoal font-normal">
@@ -253,7 +241,6 @@
             </div>
 
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-                
                 <div class="bg-white p-6 rounded-3xl border border-cream-200 shadow-sm flex flex-col justify-between space-y-4">
                     <div class="space-y-3">
                         <div class="w-12 h-12 rounded-2xl bg-straw-light text-straw-dark flex items-center justify-center">
@@ -264,9 +251,6 @@
                         <p class="text-xs text-charcoal/70 leading-relaxed">
                             Pemanfaatan jerami padi yang mengandung 35–40% selulosa alami melalui pemurnian delignifikasi dan bleaching.
                         </p>
-                    </div>
-                    <div class="text-[11px] font-medium text-botanical bg-botanical-50 p-2.5 rounded-xl">
-                        Mencegah polusi pembakaran
                     </div>
                 </div>
 
@@ -281,9 +265,6 @@
                             Merserisasi dan karboksimetilasi mengubah selulosa menjadi matriks hidrogel biokompatibel yang dapat mengembang (*swelling*).
                         </p>
                     </div>
-                    <div class="text-[11px] font-medium text-straw-dark bg-straw-light p-2.5 rounded-xl">
-                        Bebas alergen hewan laut
-                    </div>
                 </div>
 
                 <div class="bg-white p-6 rounded-3xl border border-cream-200 shadow-sm flex flex-col justify-between space-y-4">
@@ -296,9 +277,6 @@
                         <p class="text-xs text-charcoal/70 leading-relaxed">
                             Ekstraksi ultrasonik etanol 70% pada Pegagan (regenerasi) dan Binahong (antiinflamasi) dalam mikrokapsul terpisah.
                         </p>
-                    </div>
-                    <div class="text-[11px] font-medium text-emerald-800 bg-emerald-50 p-2.5 rounded-xl">
-                        Kearifan fitofarmaka lokal
                     </div>
                 </div>
 
@@ -313,18 +291,12 @@
                             Fiksasi termal hidrogel pada serat kain untuk menjamin keawetan pelepasan zat aktif saat dipakai dan dicuci.
                         </p>
                     </div>
-                    <div class="text-[11px] font-medium text-charcoal bg-cream-100 p-2.5 rounded-xl">
-                        Smart socks siap pakai
-                    </div>
                 </div>
-
             </div>
 
             <div class="mt-12 p-6 rounded-3xl bg-cream-card border border-cream-300 flex flex-wrap items-center justify-between gap-4">
                 <div class="flex items-center gap-3">
-                    <div class="w-10 h-10 rounded-full bg-botanical text-white flex items-center justify-center font-serif font-bold">
-                        SDG
-                    </div>
+                    <div class="w-10 h-10 rounded-full bg-botanical text-white flex items-center justify-center font-serif font-bold">SDG</div>
                     <div>
                         <h4 class="text-sm font-bold text-charcoal">Mendukung Tujuan Pembangunan Berkelanjutan (SDGs)</h4>
                         <p class="text-xs text-charcoal/70">Pilar Kehidupan Sehat, Inovasi Industri, dan Produksi Bertanggung Jawab.</p>
@@ -336,27 +308,25 @@
                     <span class="px-3 py-1 rounded-full bg-white text-xs font-bold text-emerald-800 border border-cream-200">SDG 12: Circular Economy</span>
                 </div>
             </div>
-
         </div>
     </section>
 
+    <!-- SECTION: ANATOMI & BAHAN -->
     <section id="anatomi-bahan" class="py-20 bg-cream-100/60 border-y border-cream-200">
         <div class="max-w-7xl mx-auto px-6">
-            
             <div class="max-w-3xl mb-12">
                 <span class="text-xs font-bold uppercase tracking-widest text-botanical">Anatomi & Karakteristik Bahan</span>
                 <h2 class="font-serif text-3xl sm:text-4xl text-charcoal mt-2 font-normal">
                     Sentuhan Alami di Balik <span class="italic text-botanical font-semibold">Setiap Lapisan</span>
                 </h2>
                 <p class="text-sm text-charcoal/75 mt-2">
-                    Klik nomor pada gambar kaus kaki atau gunakan tombol pilihan di bawah untuk meninjau fungsi spesifik setiap material.
+                    Klik nomor pada gambar kaus kaki atau gunakan tombol pilihan di bawah untuk meninjau fungsi spesifik dan letak matriks CMC di setiap material.
                 </p>
             </div>
 
             <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
                 
                 <div class="lg:col-span-7 bg-white rounded-3xl p-8 border border-cream-200 shadow-md flex flex-col justify-between relative">
-                    
                     <div class="flex items-center justify-between border-b border-cream-100 pb-4">
                         <span class="text-xs font-serif font-bold text-botanical flex items-center gap-2">
                             <span class="w-2.5 h-2.5 rounded-full bg-botanical animate-pulse"></span> Peta Perlindungan Titik Kaki
@@ -371,22 +341,27 @@
                             
                             <img src="Kaos kaki prototipe.png" alt="Prototipe Dermova 3D" class="w-full h-full object-contain drop-shadow-md" />
 
+                            <!-- Hotspot 1: Bamboo Fiber (Betis) -->
                             <button onclick="updateMaterialSpec('bamboo')" class="absolute top-[28%] left-[45%] w-10 h-10 -ml-5 -mt-5 rounded-full bg-botanical/20 flex items-center justify-center animate-pulse-glow group">
                                 <span class="w-6 h-6 rounded-full bg-botanical text-white text-xs font-bold flex items-center justify-center shadow-md group-hover:scale-110 transition">1</span>
                             </button>
 
-                            <button onclick="updateMaterialSpec('cmc')" class="absolute top-[62%] left-[68%] w-10 h-10 -ml-5 -mt-5 rounded-full bg-straw/25 flex items-center justify-center animate-pulse-glow group">
+                            <!-- Hotspot 2: Bioactive Matrix (Garis Hijau / Punggung) -->
+                            <button onclick="updateMaterialSpec('bioactive')" class="absolute top-[70%] left-[55%] w-10 h-10 -ml-5 -mt-5 rounded-full bg-straw/25 flex items-center justify-center animate-pulse-glow group">
                                 <span class="w-6 h-6 rounded-full bg-straw text-white text-xs font-bold flex items-center justify-center shadow-md group-hover:scale-110 transition">2</span>
                             </button>
 
-                            <button onclick="updateMaterialSpec('phyto')" class="absolute top-[75%] left-[50%] w-10 h-10 -ml-5 -mt-5 rounded-full bg-botanical-sage/30 flex items-center justify-center animate-pulse-glow group">
+                            <!-- Hotspot 3: Sole (Telapak kaki bawah) -->
+                            <button onclick="updateMaterialSpec('sole')" class="absolute top-[82%] left-[40%] w-10 h-10 -ml-5 -mt-5 rounded-full bg-botanical-sage/30 flex items-center justify-center animate-pulse-glow group">
                                 <span class="w-6 h-6 rounded-full bg-botanical-sage text-white text-xs font-bold flex items-center justify-center shadow-md group-hover:scale-110 transition">3</span>
                             </button>
 
-                            <button onclick="updateMaterialSpec('heel')" class="absolute top-[58%] left-[18%] w-10 h-10 -ml-5 -mt-5 rounded-full bg-charcoal/20 flex items-center justify-center group">
+                            <!-- Hotspot 4: Heel Zone (Tumit Abu-abu) -->
+                            <button onclick="updateMaterialSpec('heel')" class="absolute top-[60%] left-[20%] w-10 h-10 -ml-5 -mt-5 rounded-full bg-charcoal/20 flex items-center justify-center group">
                                 <span class="w-6 h-6 rounded-full bg-charcoal text-white text-[10px] font-bold flex items-center justify-center shadow-md group-hover:scale-110 transition">4</span>
                             </button>
 
+                            <!-- Hotspot 5: Seamless Toe Box (Jari Abu-abu) -->
                             <button onclick="updateMaterialSpec('toe')" class="absolute top-[85%] left-[82%] w-10 h-10 -ml-5 -mt-5 rounded-full bg-charcoal/20 flex items-center justify-center group">
                                 <span class="w-6 h-6 rounded-full bg-charcoal text-white text-[10px] font-bold flex items-center justify-center shadow-md group-hover:scale-110 transition">5</span>
                             </button>
@@ -394,21 +369,22 @@
                         </div>
                     </div>
 
+                    <!-- Material Switcher Buttons -->
                     <div class="grid grid-cols-2 sm:grid-cols-5 gap-2 pt-4 border-t border-cream-100">
-                        <button onclick="updateMaterialSpec('bamboo')" id="tab-bamboo" class="p-2 rounded-2xl bg-botanical text-white text-xs font-bold text-left transition shadow-sm">
+                        <button onclick="updateMaterialSpec('bamboo')" id="tab-bamboo" class="p-2 rounded-2xl bg-botanical text-white text-[11px] sm:text-xs font-bold text-center transition shadow-sm">
                             1. Serat Bambu
                         </button>
-                        <button onclick="updateMaterialSpec('cmc')" id="tab-cmc" class="p-2 rounded-2xl bg-cream-100 text-charcoal text-xs font-bold text-left hover:bg-cream-200 transition">
-                            2. CMC Jerami
+                        <button onclick="updateMaterialSpec('bioactive')" id="tab-bioactive" class="p-2 rounded-2xl bg-cream-100 text-charcoal text-[11px] sm:text-xs font-bold text-center hover:bg-cream-200 transition">
+                            2. Inti Bioaktif
                         </button>
-                        <button onclick="updateMaterialSpec('phyto')" id="tab-phyto" class="p-2 rounded-2xl bg-cream-100 text-charcoal text-xs font-bold text-left hover:bg-cream-200 transition">
-                            3. Fitokompleks
+                        <button onclick="updateMaterialSpec('sole')" id="tab-sole" class="p-2 rounded-2xl bg-cream-100 text-charcoal text-[11px] sm:text-xs font-bold text-center hover:bg-cream-200 transition">
+                            3. Area Telapak
                         </button>
-                        <button onclick="updateMaterialSpec('heel')" id="tab-heel" class="p-2 rounded-2xl bg-cream-100 text-charcoal text-xs font-bold text-left hover:bg-cream-200 transition">
-                            4. Bantalan Tumit
+                        <button onclick="updateMaterialSpec('heel')" id="tab-heel" class="p-2 rounded-2xl bg-cream-100 text-charcoal text-[11px] sm:text-xs font-bold text-center hover:bg-cream-200 transition">
+                            4. Area Tumit
                         </button>
-                        <button onclick="updateMaterialSpec('toe')" id="tab-toe" class="p-2 rounded-2xl bg-cream-100 text-charcoal text-xs font-bold text-left hover:bg-cream-200 transition">
-                            5. Proteksi Jari
+                        <button onclick="updateMaterialSpec('toe')" id="tab-toe" class="p-2 rounded-2xl bg-cream-100 text-charcoal text-[11px] sm:text-xs font-bold text-center hover:bg-cream-200 transition">
+                            5. Area Jari
                         </button>
                     </div>
 
@@ -463,7 +439,6 @@
 
     <section id="mekanisme" class="py-20 bg-botanical text-white relative overflow-hidden">
         <div class="max-w-6xl mx-auto px-6">
-            
             <div class="text-center max-w-3xl mx-auto mb-16 space-y-3">
                 <span class="text-xs font-bold uppercase tracking-widest text-botanical-200">SISTEM RESPONSIF TERHADAP STIMULUS</span>
                 <h2 class="font-serif text-3xl sm:text-4xl font-normal">
@@ -475,7 +450,6 @@
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                
                 <div class="bg-white/10 backdrop-blur-md p-8 rounded-3xl border border-white/15 space-y-3">
                     <div class="font-serif text-3xl font-bold text-botanical-200">01</div>
                     <h3 class="font-serif text-xl font-bold">Mode Pemeliharaan (Maintenance)</h3>
@@ -499,15 +473,12 @@
                         Seiring membaiknya jaringan dan menurunnya cairan luka, CMC kembali mengalami *deswelling*. Pori hidrogel mengecil dan difusi senyawa aktif melambat secara otomatis.
                     </p>
                 </div>
-
             </div>
-
         </div>
     </section>
 
     <section id="perawatan" class="py-20 bg-[#FAF8F3]">
         <div class="max-w-6xl mx-auto px-6">
-            
             <div class="mb-12">
                 <span class="text-xs font-bold uppercase tracking-widest text-botanical">Protokol Perawatan Harian</span>
                 <h2 class="font-serif text-3xl sm:text-4xl text-charcoal mt-2 font-normal">
@@ -519,9 +490,7 @@
             </div>
 
             <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
-                
                 <div class="lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-4">
-                    
                     <div class="bg-white p-6 rounded-3xl border border-cream-200 shadow-sm space-y-2">
                         <div class="w-10 h-10 rounded-2xl bg-red-50 text-red-700 flex items-center justify-center">
                             <i data-lucide="thermometer" class="w-5 h-5"></i>
@@ -561,7 +530,6 @@
                             Cukup diangin-anginkan di tempat teduh. Hindari terik matahari langsung dan dilarang menggunakan mesin pengering.
                         </p>
                     </div>
-
                 </div>
 
                 <div class="lg:col-span-5 bg-cream-card p-8 rounded-3xl border border-cream-300 space-y-4">
@@ -574,9 +542,7 @@
                         <span><strong>Larangan:</strong> Jangan merendam terlalu lama, memeras dengan puntiran keras, atau menyetrika langsung area hidrogel.</span>
                     </div>
                 </div>
-
             </div>
-
         </div>
     </section>
 
@@ -599,54 +565,55 @@
     <script>
         lucide.createIcons();
 
+        // Data yang telah digabung dan disesuaikan dengan instruksi
         const specData = {
             bamboo: {
-                badge: "Lapisan 1: Sirkulasi & Antimikroba",
+                badge: "Lapisan Luar Kaus Kaki",
                 title: "Serat Bambu Alami + Nano Silver",
-                desc: "Memiliki daya sirkulasi udara mikro (*breathable*) alami dengan konduktivitas termal rendah. Menjaga suhu di dalam sepatu tetap sejuk, menyerap keringat berlebih, serta mencegah infeksi kuman patogen.",
+                desc: "Memiliki daya sirkulasi udara mikro (breathable) alami dengan konduktivitas termal rendah. Menjaga suhu di dalam sepatu tetap sejuk, menyerap keringat berlebih, serta mencegah infeksi kuman patogen.",
                 points: [
                     "Mengatur sirkulasi udara dan pengeluaran kelembaban secara konstan.",
                     "Aktivitas antibakteri spektrum luas untuk mencegah infeksi mikrocedera."
                 ],
                 method: "Circular Weaving + Nano Impregnation"
             },
-            cmc: {
-                badge: "Lapisan 2: Matriks Hidrogel Biopolimer",
-                title: "Hidrogel CMC Jerami Padi",
-                desc: "Disintesis dari biomassa jerami padi lokal yang mengandung 35–40% selulosa. Menjadi matriks pembawa biokompatibel yang mampu menyerap eksudat dan membengkak (*swelling*) secara otomatis.",
+            bioactive: {
+                badge: "Inti Inovasi: Matriks Terintegrasi",
+                title: "Matriks Hidrogel CMC + Fitokompleks",
+                desc: "Sistem cerdas di mana mikrokapsul Fitokompleks (Pegagan & Binahong) terdispersi secara homogen tepat di dalam hidrogel CMC Jerami Padi. Bekerja sebagai satu kesatuan yang merespons luka secara otomatis.",
                 points: [
-                    "Kapasitas penyerapan eksudat luka secara cerdas dan selektif.",
-                    "Bebas bahan hewani alergenik dan aman untuk kulit sensitif penderita diabetes."
-                ],
-                method: "Pad-Dry-Cure Impregnation (80–130°C)"
-            },
-            phyto: {
-                badge: "Bioaktif: Fitofarmaka Dual-Release",
-                title: "Ekstrak Pegagan & Binahong",
-                desc: "Dua mikrokapsul terpisah: Binahong cepat melepaskan flavonoid untuk meredakan inflamasi awal, disusul Pegagan (asiatikosida) yang menstimulasi fibroblas dan sintesis kolagen kulit.",
-                points: [
-                    "Mikrokapsul Binahong: Antiinflamasi & antioksidan supresi radikal bebas (ROS).",
-                    "Mikrokapsul Pegagan: Merangsang regenerasi jaringan epitel dan angiogenesis."
+                    "Matriks CMC: Bertugas menyerap eksudat luka dan membengkak (swelling).",
+                    "Fitokompleks: Otomatis terlepas untuk meredakan radang dan meregenerasi sel kulit."
                 ],
                 method: "Ultrasonic Extraction & Microencapsulation"
             },
-            heel: {
-                badge: "Zona Fungsional: Peredam Tekanan",
-                title: "Bantalan Lembut Khusus Tumit",
-                desc: "Titik tumpuan anatomi dengan tekanan vertikal terbesar saat berjalan. Dilapisi hidrogel empuk untuk melindungi kulit dari hiperkeratosis (kalus tebal) yang memicu ulkus dalam.",
+            sole: {
+                badge: "Zona Aplikasi 1: Telapak Kaki",
+                title: "Area Telapak + Matriks CMC",
+                desc: "Area bawah kaki yang menerima beban tubuh terbesar. Terintegrasi langsung dengan matriks hidrogel CMC & Fitokompleks untuk mencegah ulkus di bagian bawah telapak kaki (plantar ulcer).",
                 points: [
-                    "Meredam tekanan vertikal langsung pada sol sepatu.",
-                    "Mencegah tumit pecah-pecah (*cracked heel*) sejak dini."
+                    "Menjaga kelembaban kulit telapak kaki agar tidak kering atau pecah-pecah.",
+                    "Pelepasan zat aktif otomatis saat mendeteksi gesekan atau tekanan tinggi."
                 ],
                 method: "Targeted Zonal Hydrogel Coating"
             },
-            toe: {
-                badge: "Zona Fungsional: Bebas Friksi",
-                title: "Pelindung Jari Kaki Tanpa Kelim",
-                desc: "Konstruksi rajut tanpa kelim kasar (*seamless toe closure*) untuk meminimalkan *shear stress* (friksi gesekan) samping dan atas jari kaki saat mengenakan sepatu.",
+            heel: {
+                badge: "Zona Aplikasi 2: Tumit",
+                title: "Bantalan Tumit + Matriks CMC",
+                desc: "Kain bantalan khusus di area tumit yang diimpregnasi dengan matriks hidrogel CMC & Fitokompleks. Berfungsi ganda sebagai peredam tekanan mekanis sekaligus agen penyembuh.",
                 points: [
-                    "Mengeliminasi gesekan mekanis berulang pada jari kaki.",
-                    "Pelepasan zat aktif basal untuk melindungi mikroklimat sela-sela jari."
+                    "Meredam tekanan vertikal langsung pada sol sepatu.",
+                    "Mencegah hiperkeratosis (kapalan tebal) yang memicu ulkus dalam."
+                ],
+                method: "Zonal Cushioning & Pad-Dry-Cure"
+            },
+            toe: {
+                badge: "Zona Aplikasi 3: Ujung Jari",
+                title: "Proteksi Jari + Matriks CMC",
+                desc: "Konstruksi rajut ujung jari tanpa kelim kasar (seamless) yang juga dilapisi matriks hidrogel CMC & Fitokompleks. Melindungi dari friksi sepatu yang sering tidak disadari penderita neuropati.",
+                points: [
+                    "Mengeliminasi luka gesek akibat jahitan kaus kaki (shear stress).",
+                    "Perlindungan aktif untuk mencegah luka di sela-sela dan ujung jari."
                 ],
                 method: "Ergonomic Seamless Weaving"
             }
@@ -671,12 +638,12 @@
 
             lucide.createIcons();
 
-            ['bamboo', 'cmc', 'phyto', 'heel', 'toe'].forEach(k => {
+            ['bamboo', 'bioactive', 'sole', 'heel', 'toe'].forEach(k => {
                 const btn = document.getElementById(`tab-${k}`);
                 if (k === key) {
-                    btn.className = 'p-2 rounded-2xl bg-botanical text-white text-xs font-bold text-left transition shadow-sm';
+                    btn.className = 'p-2 rounded-2xl bg-botanical text-white text-[11px] sm:text-xs font-bold text-center transition shadow-sm';
                 } else {
-                    btn.className = 'p-2 rounded-2xl bg-cream-100 text-charcoal text-xs font-bold text-left hover:bg-cream-200 transition';
+                    btn.className = 'p-2 rounded-2xl bg-cream-100 text-charcoal text-[11px] sm:text-xs font-bold text-center hover:bg-cream-200 transition';
                 }
             });
         }
