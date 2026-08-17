@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DERMOVA — Berjalan Bebas, Dilindungi Inovasi Alam Nusantara</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        botanical: {
+                            50: '#F2F7F4',
+                            100: '#E1EFE7',
+                            200: '#C4DFD0',
+                            DEFAULT: '#204E38',
+                            dark: '#143425',
+                            sage: '#6C9479'
+                        },
+                        straw: {
+                            light: '#FEF8EB',
+                            DEFAULT: '#D49B44',
+                            dark: '#A37125'
+                        },
+                        cream: {
+                            50: '#FAF8F3',
+                            100: '#F4EFE6',
+                            200: '#EAE2D3',
+                            300: '#D8CEBC',
+                            card: '#EFE9DC'
+                        },
+                        charcoal: '#23211E'
+                    },
+                    fontFamily: {
+                        serif: ['"Fraunces"', 'serif'],
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                    },
+                    animation: {
+                        'float-gentle': 'floatGentle 4.5s ease-in-out infinite',
+                        'pulse-glow': 'pulseGlow 2.5s ease-in-out infinite',
+                    },
+                    keyframes: {
+                        floatGentle: {
+                            '0%, 100%': { transform: 'translateY(0px)' },
+                            '50%': { transform: 'translateY(-8px)' },
+                        },
+                        pulseGlow: {
+                            '0%, 100%': { opacity: '0.4', transform: 'scale(1)' },
+                            '50%': { opacity: '0.85', transform: 'scale(1.2)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #FAF8F3;
+            color: #23211E;
+        }
+        .soft-card {
+            background: rgba(255, 255, 255, 0.88);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(216, 206, 188, 0.7);
+        }
+        .straw-badge {
+            background: linear-gradient(135deg, #FEF8EB 0%, #F8EACB 100%);
+            border: 1px solid rgba(212, 155, 68, 0.35);
+        }
+    </style>
+</head>
+<body class="font-sans antialiased selection:bg-botanical selection:text-white">
+
+    <header class="fixed top-0 left-0 right-0 z-50 bg-[#FAF8F3]/90 backdrop-blur-md border-b border-cream-200">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+            <a href="#" class="flex items-center gap-2.5">
+                <div class="w-8 h-8 rounded-full bg-botanical text-white flex items-center justify-center font-serif text-base font-bold shadow-sm">
+                    D
+                </div>
+                <span class="font-serif text-2xl font-bold tracking-tight text-botanical-dark">DERMOVA</span>
+            </a>
+
+            <nav class="hidden md:flex items-center space-x-8 text-xs font-bold tracking-wider text-charcoal/70 uppercase">
+                <a href="#kisah" class="hover:text-botanical transition">Kisah & Visi</a>
+                <a href="#sirkular" class="hover:text-botanical transition">Ekonomi Sirkular</a>
+                <a href="#anatomi-bahan" class="text-botanical flex items-center gap-1"><span class="w-1.5 h-1.5 rounded-full bg-botanical animate-pulse"></span> Anatomi & Bahan</a>
+                <a href="#mekanisme" class="hover:text-botanical transition">Mekanisme Kerja</a>
+                <a href="#perawatan" class="hover:text-botanical transition">Panduan Perawatan</a>
+            </nav>
+
+            <a href="#anatomi-bahan" class="inline-flex items-center gap-2 text-xs font-semibold tracking-wide bg-botanical hover:bg-botanical-dark text-white px-5 py-2.5 rounded-full transition shadow-sm">
+                <i data-lucide="sparkles" class="w-3.5 h-3.5 text-straw"></i> Eksplorasi Inovasi
+            </a>
+        </div>
+    </header>
+
+    <section class="pt-32 pb-16 md:pt-40 md:pb-24 relative overflow-hidden">
+        <div class="absolute top-1/4 left-6 w-96 h-96 bg-botanical-100/70 rounded-full blur-3xl pointer-events-none -z-10"></div>
+        <div class="absolute bottom-10 right-10 w-96 h-96 bg-straw-light rounded-full blur-2xl pointer-events-none -z-10"></div>
+
+        <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+            
+            <div class="lg:col-span-7 space-y-6">
+                <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full straw-badge text-straw-dark text-xs font-semibold shadow-sm">
+                    <i data-lucide="sprout" class="w-4 h-4 text-straw"></i>
+                    <span>Ekonomi Sirkular • Smart Bioactive Diabetic Socks 2026</span>
+                </div>
+
+                <h1 class="font-serif text-4xl sm:text-5xl lg:text-6xl text-charcoal leading-[1.15] font-normal">
+                    Melangkah Bebas, <br>
+                    <span class="italic text-botanical font-semibold">Terlindungi Alami</span> di Setiap Aktivitas.
+                </h1>
+
+                <p class="text-base sm:text-lg text-charcoal/75 max-w-xl leading-relaxed">
+                    Mentransformasi 100 juta ton limbah jerami padi dan kekuatan tanaman herbal Indonesia (Pegagan & Binahong) menjadi kaus kaki pintar yang merawat kaki diabetik secara aktif sebelum luka terbentuk — <strong>tanpa rasa sakit, tanpa jarum suntik, ramah lingkungan.</strong>
+                </p>
+
+                <div class="flex flex-wrap items-center gap-4 pt-2">
+                    <a href="#anatomi-bahan" class="inline-flex items-center gap-2 bg-botanical hover:bg-botanical-dark text-white px-7 py-3.5 rounded-full text-sm font-medium transition shadow-md hover:shadow-lg">
+                        Pelajari Detail Bahan <i data-lucide="arrow-down-right" class="w-4 h-4"></i>
+                    </a>
+                    <a href="#kisah" class="inline-flex items-center gap-2 bg-cream-100 hover:bg-cream-200 text-charcoal px-6 py-3.5 rounded-full text-sm font-medium transition border border-cream-300">
+                        Mengapa Harus Preventif?
+                    </a>
+                </div>
+
+                <div class="grid grid-cols-3 gap-4 pt-6 border-t border-cream-200 max-w-lg">
+                    <div>
+                        <div class="font-serif text-2xl sm:text-3xl font-bold text-botanical">100 Juta Ton</div>
+                        <div class="text-xs text-charcoal/70 mt-0.5">Biomassa Jerami Padi</div>
+                    </div>
+                    <div>
+                        <div class="font-serif text-2xl sm:text-3xl font-bold text-straw">Dual Bioaktif</div>
+                        <div class="text-xs text-charcoal/70 mt-0.5">Pegagan & Binahong</div>
+                    </div>
+                    <div>
+                        <div class="font-serif text-2xl sm:text-3xl font-bold text-botanical">0% Kimia</div>
+                        <div class="text-xs text-charcoal/70 mt-0.5">Bebas Efek Samping Obat</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="lg:col-span-5 relative flex justify-center">
+                <div class="relative w-full max-w-md bg-cream-card border border-cream-300 p-8 rounded-[32px] shadow-xl space-y-6">
+                    
+                    <div class="flex items-center justify-between">
+                        <span class="px-3 py-1 bg-botanical text-white text-[11px] font-bold rounded-full uppercase tracking-wider">
+                            Wearable Biomedis
+                        </span>
+                        <div class="flex items-center gap-1.5 text-xs text-straw-dark font-medium">
+                            <i data-lucide="leaf" class="w-4 h-4 text-botanical"></i> Bio-Homeostasis
+                        </div>
+                    </div>
+
+                    <div class="py-2 flex justify-center items-center">
+                        <div class="relative w-64 h-80 animate-float-gentle flex items-center justify-center">
+                            <img src="Kaos kaki prototipe.png" alt="Prototipe Dermova 3D" class="w-full h-full object-contain drop-shadow-xl" />
+                        </div>
+                    </div>
+
+                    <div class="bg-white/85 p-4 rounded-2xl border border-cream-200 text-xs text-charcoal/80 italic leading-relaxed flex items-start gap-3 shadow-sm">
+                        <i data-lucide="quote" class="w-5 h-5 text-straw shrink-0 mt-0.5"></i>
+                        <span>"Mengembalikan kebebasan berjalan bagi penderita diabetes di masa usia produktif tanpa dihantui ketakutan komplikasi ulkus."</span>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="kisah" class="py-20 bg-cream-100/60 border-y border-cream-200">
+        <div class="max-w-6xl mx-auto px-6">
+            
+            <div class="max-w-3xl mb-14">
+                <span class="text-xs font-bold uppercase tracking-widest text-botanical">Kesehatan & Kualitas Hidup</span>
+                <h2 class="font-serif text-3xl sm:text-4xl text-charcoal mt-2 font-normal">
+                    Mengapa Harus Melindungi <span class="italic text-botanical font-semibold">Sebelum Luka Muncul?</span>
+                </h2>
+                <p class="text-sm sm:text-base text-charcoal/75 mt-3 leading-relaxed">
+                    Saat Indonesia menuju bonus demografi dengan 69% penduduk usia produktif, komplikasi neuropati perifer membuat penderita diabetes sering tidak menyadari gesekan sepatu berulang. Kondisi ini merusak pertahanan kulit dan berkembang menjadi ulkus kronis.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                
+                <div class="bg-white p-8 rounded-3xl border border-stone-200 shadow-sm space-y-4 opacity-85">
+                    <div class="inline-flex items-center gap-2 text-xs font-bold text-red-700 bg-red-50 px-3 py-1 rounded-full">
+                        <i data-lucide="alert-triangle" class="w-3.5 h-3.5"></i> Pendekatan Konvensional (Kuratif)
+                    </div>
+                    <h3 class="font-serif text-xl font-bold text-charcoal">Tindakan Medis Setelah Luka Terbuka</h3>
+                    <ul class="space-y-3 text-xs sm:text-sm text-charcoal/70">
+                        <li class="flex items-start gap-2.5">
+                            <i data-lucide="x" class="w-4 h-4 text-red-500 shrink-0 mt-0.5"></i>
+                            <span>Baru diobati setelah ulkus terbentuk dengan risiko infeksi tinggi.</span>
+                        </li>
+                        <li class="flex items-start gap-2.5">
+                            <i data-lucide="x" class="w-4 h-4 text-red-500 shrink-0 mt-0.5"></i>
+                            <span>Ketergantungan pada salep topikal dan balutan luka berbahan baku impor.</span>
+                        </li>
+                        <li class="flex items-start gap-2.5">
+                            <i data-lucide="x" class="w-4 h-4 text-red-500 shrink-0 mt-0.5"></i>
+                            <span>Angka amputasi nasional mencapai 30% dengan tingkat mortalitas 32%.</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="bg-white p-8 rounded-3xl border-2 border-botanical shadow-md space-y-4 relative overflow-hidden">
+                    <div class="absolute top-0 right-0 w-32 h-32 bg-botanical-100/60 rounded-full blur-xl -z-0"></div>
+                    
+                    <div class="inline-flex items-center gap-2 text-xs font-bold text-botanical bg-botanical-100 px-3 py-1 rounded-full relative z-10">
+                        <i data-lucide="check-circle-2" class="w-3.5 h-3.5"></i> Paradigma DERMOVA (Preventif)
+                    </div>
+                    <h3 class="font-serif text-xl font-bold text-botanical-dark relative z-10">Menjaga Keseimbangan Kulit Sejak Awal</h3>
+                    <ul class="space-y-3 text-xs sm:text-sm text-charcoal/80 relative z-10">
+                        <li class="flex items-start gap-2.5">
+                            <i data-lucide="check" class="w-4 h-4 text-botanical font-bold shrink-0 mt-0.5"></i>
+                            <span>Cukup dikenakan seperti kaus kaki harian yang nyaman dan ergonomis.</span>
+                        </li>
+                        <li class="flex items-start gap-2.5">
+                            <i data-lucide="check" class="w-4 h-4 text-botanical font-bold shrink-0 mt-0.5"></i>
+                            <span>Mengendalikan mikrolingkungan kulit (*skin microenvironment*) sebelum abrasi memburuk.</span>
+                        </li>
+                        <li class="flex items-start gap-2.5">
+                            <i data-lucide="check" class="w-4 h-4 text-botanical font-bold shrink-0 mt-0.5"></i>
+                            <span>Memanfaatkan kemandirian bahan biomassa dan herbal lokal berkelanjutan.</span>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <section id="sirkular" class="py-20 relative overflow-hidden">
+        <div class="max-w-6xl mx-auto px-6">
+            
+            <div class="text-center max-w-3xl mx-auto mb-16 space-y-3">
+                <span class="text-xs font-bold uppercase tracking-widest text-straw-dark">VALORISASI BIOMASSA PERTANIAN NUSANTARA</span>
+                <h2 class="font-serif text-3xl sm:text-4xl text-charcoal font-normal">
+                    Ekonomi Sirkular Berbasis <span class="italic text-botanical font-semibold">Biomaterial Lokal</span>
+                </h2>
+                <p class="text-sm text-charcoal/75 leading-relaxed">
+                    Bagaimana 100 juta ton limbah jerami padi disintesis menjadi Carboxymethyl Cellulose (CMC) dan disinergikan dengan fitofarmaka alami.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                
+                <div class="bg-white p-6 rounded-3xl border border-cream-200 shadow-sm flex flex-col justify-between space-y-4">
+                    <div class="space-y-3">
+                        <div class="w-12 h-12 rounded-2xl bg-straw-light text-straw-dark flex items-center justify-center">
+                            <i data-lucide="wheat" class="w-6 h-6"></i>
+                        </div>
+                        <div class="text-xs font-mono font-bold text-straw">TAHAP 01</div>
+                        <h3 class="font-serif text-lg font-bold text-charcoal">Biomassa Jerami</h3>
+                        <p class="text-xs text-charcoal/70 leading-relaxed">
+                            Pemanfaatan jerami padi yang mengandung 35–40% selulosa alami melalui pemurnian delignifikasi dan bleaching.
+                        </p>
+                    </div>
+                    <div class="text-[11px] font-medium text-botanical bg-botanical-50 p-2.5 rounded-xl">
+                        Mencegah polusi pembakaran
+                    </div>
+                </div>
+
+                <div class="bg-white p-6 rounded-3xl border border-cream-200 shadow-sm flex flex-col justify-between space-y-4">
+                    <div class="space-y-3">
+                        <div class="w-12 h-12 rounded-2xl bg-botanical-100 text-botanical flex items-center justify-center">
+                            <i data-lucide="flask-conical" class="w-6 h-6"></i>
+                        </div>
+                        <div class="text-xs font-mono font-bold text-botanical">TAHAP 02</div>
+                        <h3 class="font-serif text-lg font-bold text-charcoal">Sintesis Sodium CMC</h3>
+                        <p class="text-xs text-charcoal/70 leading-relaxed">
+                            Merserisasi dan karboksimetilasi mengubah selulosa menjadi matriks hidrogel biokompatibel yang dapat mengembang (*swelling*).
+                        </p>
+                    </div>
+                    <div class="text-[11px] font-medium text-straw-dark bg-straw-light p-2.5 rounded-xl">
+                        Bebas alergen hewan laut
+                    </div>
+                </div>
+
+                <div class="bg-white p-6 rounded-3xl border border-cream-200 shadow-sm flex flex-col justify-between space-y-4">
+                    <div class="space-y-3">
+                        <div class="w-12 h-12 rounded-2xl bg-emerald-50 text-emerald-800 flex items-center justify-center">
+                            <i data-lucide="flower" class="w-6 h-6"></i>
+                        </div>
+                        <div class="text-xs font-mono font-bold text-emerald-700">TAHAP 03</div>
+                        <h3 class="font-serif text-lg font-bold text-charcoal">Fitokompleks Herbal</h3>
+                        <p class="text-xs text-charcoal/70 leading-relaxed">
+                            Ekstraksi ultrasonik etanol 70% pada Pegagan (regenerasi) dan Binahong (antiinflamasi) dalam mikrokapsul terpisah.
+                        </p>
+                    </div>
+                    <div class="text-[11px] font-medium text-emerald-800 bg-emerald-50 p-2.5 rounded-xl">
+                        Kearifan fitofarmaka lokal
+                    </div>
+                </div>
+
+                <div class="bg-white p-6 rounded-3xl border border-cream-200 shadow-sm flex flex-col justify-between space-y-4">
+                    <div class="space-y-3">
+                        <div class="w-12 h-12 rounded-2xl bg-cream-200 text-charcoal flex items-center justify-center">
+                            <i data-lucide="shirt" class="w-6 h-6"></i>
+                        </div>
+                        <div class="text-xs font-mono font-bold text-charcoal">TAHAP 04</div>
+                        <h3 class="font-serif text-lg font-bold text-charcoal">Pad-Dry-Cure</h3>
+                        <p class="text-xs text-charcoal/70 leading-relaxed">
+                            Fiksasi termal hidrogel pada serat kain untuk menjamin keawetan pelepasan zat aktif saat dipakai dan dicuci.
+                        </p>
+                    </div>
+                    <div class="text-[11px] font-medium text-charcoal bg-cream-100 p-2.5 rounded-xl">
+                        Smart socks siap pakai
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="mt-12 p-6 rounded-3xl bg-cream-card border border-cream-300 flex flex-wrap items-center justify-between gap-4">
+                <div class="flex items-center gap-3">
+                    <div class="w-10 h-10 rounded-full bg-botanical text-white flex items-center justify-center font-serif font-bold">
+                        SDG
+                    </div>
+                    <div>
+                        <h4 class="text-sm font-bold text-charcoal">Mendukung Tujuan Pembangunan Berkelanjutan (SDGs)</h4>
+                        <p class="text-xs text-charcoal/70">Pilar Kehidupan Sehat, Inovasi Industri, dan Produksi Bertanggung Jawab.</p>
+                    </div>
+                </div>
+                <div class="flex items-center gap-2">
+                    <span class="px-3 py-1 rounded-full bg-white text-xs font-bold text-botanical border border-cream-200">SDG 3: Good Health</span>
+                    <span class="px-3 py-1 rounded-full bg-white text-xs font-bold text-straw-dark border border-cream-200">SDG 9: Industry & Innovation</span>
+                    <span class="px-3 py-1 rounded-full bg-white text-xs font-bold text-emerald-800 border border-cream-200">SDG 12: Circular Economy</span>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="anatomi-bahan" class="py-20 bg-cream-100/60 border-y border-cream-200">
+        <div class="max-w-7xl mx-auto px-6">
+            
+            <div class="max-w-3xl mb-12">
+                <span class="text-xs font-bold uppercase tracking-widest text-botanical">Anatomi & Karakteristik Bahan</span>
+                <h2 class="font-serif text-3xl sm:text-4xl text-charcoal mt-2 font-normal">
+                    Sentuhan Alami di Balik <span class="italic text-botanical font-semibold">Setiap Lapisan</span>
+                </h2>
+                <p class="text-sm text-charcoal/75 mt-2">
+                    Klik nomor pada gambar kaus kaki atau gunakan tombol pilihan di bawah untuk meninjau fungsi spesifik setiap material.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
+                
+                <div class="lg:col-span-7 bg-white rounded-3xl p-8 border border-cream-200 shadow-md flex flex-col justify-between relative">
+                    
+                    <div class="flex items-center justify-between border-b border-cream-100 pb-4">
+                        <span class="text-xs font-serif font-bold text-botanical flex items-center gap-2">
+                            <span class="w-2.5 h-2.5 rounded-full bg-botanical animate-pulse"></span> Peta Perlindungan Titik Kaki
+                        </span>
+                        <span class="text-[11px] bg-cream-100 text-charcoal/70 px-3 py-1 rounded-full">
+                            Pilih titik interaktif
+                        </span>
+                    </div>
+
+                    <div class="my-6 py-2 flex justify-center items-center">
+                        <div class="relative w-full max-w-[280px] aspect-[1/1.5] flex items-center justify-center">
+                            
+                            <img src="Kaos kaki prototipe.png" alt="Prototipe Dermova 3D" class="w-full h-full object-contain drop-shadow-md" />
+
+                            <button onclick="updateMaterialSpec('bamboo')" class="absolute top-[28%] left-[45%] w-10 h-10 -ml-5 -mt-5 rounded-full bg-botanical/20 flex items-center justify-center animate-pulse-glow group">
+                                <span class="w-6 h-6 rounded-full bg-botanical text-white text-xs font-bold flex items-center justify-center shadow-md group-hover:scale-110 transition">1</span>
+                            </button>
+
+                            <button onclick="updateMaterialSpec('cmc')" class="absolute top-[62%] left-[68%] w-10 h-10 -ml-5 -mt-5 rounded-full bg-straw/25 flex items-center justify-center animate-pulse-glow group">
+                                <span class="w-6 h-6 rounded-full bg-straw text-white text-xs font-bold flex items-center justify-center shadow-md group-hover:scale-110 transition">2</span>
+                            </button>
+
+                            <button onclick="updateMaterialSpec('phyto')" class="absolute top-[75%] left-[50%] w-10 h-10 -ml-5 -mt-5 rounded-full bg-botanical-sage/30 flex items-center justify-center animate-pulse-glow group">
+                                <span class="w-6 h-6 rounded-full bg-botanical-sage text-white text-xs font-bold flex items-center justify-center shadow-md group-hover:scale-110 transition">3</span>
+                            </button>
+
+                            <button onclick="updateMaterialSpec('heel')" class="absolute top-[58%] left-[18%] w-10 h-10 -ml-5 -mt-5 rounded-full bg-charcoal/20 flex items-center justify-center group">
+                                <span class="w-6 h-6 rounded-full bg-charcoal text-white text-[10px] font-bold flex items-center justify-center shadow-md group-hover:scale-110 transition">4</span>
+                            </button>
+
+                            <button onclick="updateMaterialSpec('toe')" class="absolute top-[85%] left-[82%] w-10 h-10 -ml-5 -mt-5 rounded-full bg-charcoal/20 flex items-center justify-center group">
+                                <span class="w-6 h-6 rounded-full bg-charcoal text-white text-[10px] font-bold flex items-center justify-center shadow-md group-hover:scale-110 transition">5</span>
+                            </button>
+
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-2 sm:grid-cols-5 gap-2 pt-4 border-t border-cream-100">
+                        <button onclick="updateMaterialSpec('bamboo')" id="tab-bamboo" class="p-2 rounded-2xl bg-botanical text-white text-xs font-bold text-left transition shadow-sm">
+                            1. Serat Bambu
+                        </button>
+                        <button onclick="updateMaterialSpec('cmc')" id="tab-cmc" class="p-2 rounded-2xl bg-cream-100 text-charcoal text-xs font-bold text-left hover:bg-cream-200 transition">
+                            2. CMC Jerami
+                        </button>
+                        <button onclick="updateMaterialSpec('phyto')" id="tab-phyto" class="p-2 rounded-2xl bg-cream-100 text-charcoal text-xs font-bold text-left hover:bg-cream-200 transition">
+                            3. Fitokompleks
+                        </button>
+                        <button onclick="updateMaterialSpec('heel')" id="tab-heel" class="p-2 rounded-2xl bg-cream-100 text-charcoal text-xs font-bold text-left hover:bg-cream-200 transition">
+                            4. Bantalan Tumit
+                        </button>
+                        <button onclick="updateMaterialSpec('toe')" id="tab-toe" class="p-2 rounded-2xl bg-cream-100 text-charcoal text-xs font-bold text-left hover:bg-cream-200 transition">
+                            5. Proteksi Jari
+                        </button>
+                    </div>
+
+                </div>
+
+                <div class="lg:col-span-5 bg-white rounded-3xl p-8 border border-cream-200 shadow-md flex flex-col justify-between">
+                    <div>
+                        <span id="insp-badge" class="px-3 py-1 bg-botanical-100 text-botanical text-xs font-bold rounded-full inline-block mb-3">
+                            Lapisan 1: Sirkulasi & Antimikroba
+                        </span>
+                        
+                        <h3 id="insp-title" class="font-serif text-2xl font-bold text-charcoal mb-3">
+                            Serat Bambu Alami + Nano Silver
+                        </h3>
+
+                        <p id="insp-desc" class="text-sm text-charcoal/75 leading-relaxed mb-6">
+                            Memiliki daya sirkulasi udara mikro (*breathable*) alami dengan konduktivitas termal rendah. Menjaga suhu di dalam sepatu tetap sejuk, menyerap keringat berlebih, serta mencegah infeksi kuman patogen.
+                        </p>
+
+                        <div class="space-y-3 pt-4 border-t border-cream-100">
+                            <h4 class="text-xs font-bold uppercase tracking-wider text-botanical">Karakteristik Utama:</h4>
+                            <ul id="insp-points" class="space-y-2.5 text-xs sm:text-sm text-charcoal/80">
+                                <li class="flex items-start gap-2.5">
+                                    <i data-lucide="check-circle" class="w-4 h-4 text-botanical shrink-0 mt-0.5"></i>
+                                    <span>Mengatur sirkulasi udara dan pengeluaran kelembaban secara konstan.</span>
+                                </li>
+                                <li class="flex items-start gap-2.5">
+                                    <i data-lucide="check-circle" class="w-4 h-4 text-botanical shrink-0 mt-0.5"></i>
+                                    <span>Aktivitas antibakteri spektrum luas untuk mencegah infeksi mikrocedera.</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="mt-8 p-4 rounded-2xl bg-cream-50 border border-cream-200 flex items-center justify-between">
+                        <div class="flex items-center gap-3">
+                            <div class="w-8 h-8 rounded-full bg-straw-light text-straw-dark flex items-center justify-center shrink-0">
+                                <i data-lucide="shield" class="w-4 h-4"></i>
+                            </div>
+                            <span class="text-xs font-medium text-charcoal/70">Metode Fiksasi:</span>
+                        </div>
+                        <span id="insp-method" class="text-xs font-mono font-bold text-botanical">
+                            Circular Weaving + Nano Impregnation
+                        </span>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <section id="mekanisme" class="py-20 bg-botanical text-white relative overflow-hidden">
+        <div class="max-w-6xl mx-auto px-6">
+            
+            <div class="text-center max-w-3xl mx-auto mb-16 space-y-3">
+                <span class="text-xs font-bold uppercase tracking-widest text-botanical-200">SISTEM RESPONSIF TERHADAP STIMULUS</span>
+                <h2 class="font-serif text-3xl sm:text-4xl font-normal">
+                    Mekanisme Kerja Siklus 3 Mode
+                </h2>
+                <p class="text-sm text-botanical-100 leading-relaxed">
+                    Kaus kaki pintar yang menyesuaikan pelepasan fitokompleks sesuai kondisi mikrolingkungan kulit penderita secara otonom.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                
+                <div class="bg-white/10 backdrop-blur-md p-8 rounded-3xl border border-white/15 space-y-3">
+                    <div class="font-serif text-3xl font-bold text-botanical-200">01</div>
+                    <h3 class="font-serif text-xl font-bold">Mode Pemeliharaan (Maintenance)</h3>
+                    <p class="text-xs text-botanical-100 leading-relaxed">
+                        Kondisi kulit normal. Matriks hidrogel berada pada keadaan mengerut (*deswelling*). Pori matriks rapat sehingga pelepasan fitokompleks berlangsung di tingkat basal untuk menjaga kelembaban stratum korneum.
+                    </p>
+                </div>
+
+                <div class="bg-white/10 backdrop-blur-md p-8 rounded-3xl border border-white/15 space-y-3">
+                    <div class="font-serif text-3xl font-bold text-straw">02</div>
+                    <h3 class="font-serif text-xl font-bold">Mode Respon (Swelling & Release)</h3>
+                    <p class="text-xs text-botanical-100 leading-relaxed">
+                        Gesekan memicu eksudat luka dan ROS. Hidrogel mengembang (*swelling*). Mikrokapsul Binahong meredakan fase inflamasi awal, disusul mikrokapsul Pegagan yang merangsang regenerasi kolagen.
+                    </p>
+                </div>
+
+                <div class="bg-white/10 backdrop-blur-md p-8 rounded-3xl border border-white/15 space-y-3">
+                    <div class="font-serif text-3xl font-bold text-emerald-300">03</div>
+                    <h3 class="font-serif text-xl font-bold">Mode Pemulihan (Recovery)</h3>
+                    <p class="text-xs text-botanical-100 leading-relaxed">
+                        Seiring membaiknya jaringan dan menurunnya cairan luka, CMC kembali mengalami *deswelling*. Pori hidrogel mengecil dan difusi senyawa aktif melambat secara otomatis.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <section id="perawatan" class="py-20 bg-[#FAF8F3]">
+        <div class="max-w-6xl mx-auto px-6">
+            
+            <div class="mb-12">
+                <span class="text-xs font-bold uppercase tracking-widest text-botanical">Protokol Perawatan Harian</span>
+                <h2 class="font-serif text-3xl sm:text-4xl text-charcoal mt-2 font-normal">
+                    Rawat Dermova, <span class="italic text-botanical font-semibold">Jaga Kualitas Terapi</span>
+                </h2>
+                <p class="text-sm text-charcoal/70 mt-2">
+                    Langkah praktis merawat kaus kaki agar kandungan bioaktif herbal dan elastisitas hidrogel tetap awet dalam pemakaian jangka panjang.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+                
+                <div class="lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    
+                    <div class="bg-white p-6 rounded-3xl border border-cream-200 shadow-sm space-y-2">
+                        <div class="w-10 h-10 rounded-2xl bg-red-50 text-red-700 flex items-center justify-center">
+                            <i data-lucide="thermometer" class="w-5 h-5"></i>
+                        </div>
+                        <h4 class="font-serif font-bold text-base text-charcoal">Suhu Maksimal 40°C</h4>
+                        <p class="text-xs text-charcoal/70 leading-relaxed">
+                            Cuci dengan tangan atau mesin mode <em>gentle/delicate</em>. Air panas dapat merusak integritas matriks hidrogel CMC.
+                        </p>
+                    </div>
+
+                    <div class="bg-white p-6 rounded-3xl border border-cream-200 shadow-sm space-y-2">
+                        <div class="w-10 h-10 rounded-2xl bg-straw-light text-straw-dark flex items-center justify-center">
+                            <i data-lucide="shopping-bag" class="w-5 h-5"></i>
+                        </div>
+                        <h4 class="font-serif font-bold text-base text-charcoal">Gunakan Kantong Cuci</h4>
+                        <p class="text-xs text-charcoal/70 leading-relaxed">
+                            Masukkan ke dalam <em>mesh laundry bag</em> untuk melindungi struktur serat dan bantalan hidrogel dari tarikan mesin.
+                        </p>
+                    </div>
+
+                    <div class="bg-white p-6 rounded-3xl border border-cream-200 shadow-sm space-y-2">
+                        <div class="w-10 h-10 rounded-2xl bg-botanical-100 text-botanical flex items-center justify-center">
+                            <i data-lucide="droplet" class="w-5 h-5"></i>
+                        </div>
+                        <h4 class="font-serif font-bold text-base text-charcoal">Deterjen Lembut</h4>
+                        <p class="text-xs text-charcoal/70 leading-relaxed">
+                            Gunakan deterjen netral bebas pemutih (<em>bleach-free</em>) dan hindari pelembut pakaian kimiawi pekat.
+                        </p>
+                    </div>
+
+                    <div class="bg-white p-6 rounded-3xl border border-cream-200 shadow-sm space-y-2">
+                        <div class="w-10 h-10 rounded-2xl bg-emerald-50 text-emerald-800 flex items-center justify-center">
+                            <i data-lucide="wind" class="w-5 h-5"></i>
+                        </div>
+                        <h4 class="font-serif font-bold text-base text-charcoal">Pengeringan Alami</h4>
+                        <p class="text-xs text-charcoal/70 leading-relaxed">
+                            Cukup diangin-anginkan di tempat teduh. Hindari terik matahari langsung dan dilarang menggunakan mesin pengering.
+                        </p>
+                    </div>
+
+                </div>
+
+                <div class="lg:col-span-5 bg-cream-card p-8 rounded-3xl border border-cream-300 space-y-4">
+                    <h3 class="font-serif text-2xl font-bold text-charcoal">Didukung Metode Pad-Dry-Cure</h3>
+                    <p class="text-xs text-charcoal/75 leading-relaxed">
+                        Keawetan dan kestabilan Dermova dihasilkan lewat fiksasi termal 3 tahap: <strong>Padding</strong> (pencelupan seragam), <strong>Drying</strong> (80–90°C), dan <strong>Curing</strong> (120–130°C) yang mengikat hidrogel kuat pada serat tekstil.
+                    </p>
+                    <div class="p-4 rounded-2xl bg-red-50 border border-red-200 text-red-800 text-xs leading-relaxed flex items-start gap-2">
+                        <i data-lucide="alert-circle" class="w-4 h-4 shrink-0 mt-0.5"></i>
+                        <span><strong>Larangan:</strong> Jangan merendam terlalu lama, memeras dengan puntiran keras, atau menyetrika langsung area hidrogel.</span>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="bg-botanical-dark text-white py-14 border-t border-cream-300">
+        <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-12 gap-8 items-center justify-between">
+            <div class="md:col-span-6 space-y-2">
+                <div class="font-serif text-2xl font-bold tracking-wider text-straw-light">DERMOVA</div>
+                <p class="text-xs text-white/70 max-w-md leading-relaxed">
+                    Dermal Microenvironment Optimization via Bioactive System — Smart Bioactive Diabetic Socks Berbasis Limbah Jerami dan Fitokompleks Pegagan-Binahong.
+                </p>
+            </div>
+            <div class="md:col-span-6 flex flex-col md:items-end text-xs text-white/70 space-y-1 font-mono">
+                <div>UNIVERSITAS NEGERI SEMARANG (UNNES)</div>
+                <div class="text-emerald-300">Najma Kamila Annafiisa • Zakia Rahmawati • Dionezra Bagus Imanuel</div>
+                <div class="text-straw-light text-[11px]">Kota Semarang, Jawa Tengah • 2026</div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+
+        const specData = {
+            bamboo: {
+                badge: "Lapisan 1: Sirkulasi & Antimikroba",
+                title: "Serat Bambu Alami + Nano Silver",
+                desc: "Memiliki daya sirkulasi udara mikro (*breathable*) alami dengan konduktivitas termal rendah. Menjaga suhu di dalam sepatu tetap sejuk, menyerap keringat berlebih, serta mencegah infeksi kuman patogen.",
+                points: [
+                    "Mengatur sirkulasi udara dan pengeluaran kelembaban secara konstan.",
+                    "Aktivitas antibakteri spektrum luas untuk mencegah infeksi mikrocedera."
+                ],
+                method: "Circular Weaving + Nano Impregnation"
+            },
+            cmc: {
+                badge: "Lapisan 2: Matriks Hidrogel Biopolimer",
+                title: "Hidrogel CMC Jerami Padi",
+                desc: "Disintesis dari biomassa jerami padi lokal yang mengandung 35–40% selulosa. Menjadi matriks pembawa biokompatibel yang mampu menyerap eksudat dan membengkak (*swelling*) secara otomatis.",
+                points: [
+                    "Kapasitas penyerapan eksudat luka secara cerdas dan selektif.",
+                    "Bebas bahan hewani alergenik dan aman untuk kulit sensitif penderita diabetes."
+                ],
+                method: "Pad-Dry-Cure Impregnation (80–130°C)"
+            },
+            phyto: {
+                badge: "Bioaktif: Fitofarmaka Dual-Release",
+                title: "Ekstrak Pegagan & Binahong",
+                desc: "Dua mikrokapsul terpisah: Binahong cepat melepaskan flavonoid untuk meredakan inflamasi awal, disusul Pegagan (asiatikosida) yang menstimulasi fibroblas dan sintesis kolagen kulit.",
+                points: [
+                    "Mikrokapsul Binahong: Antiinflamasi & antioksidan supresi radikal bebas (ROS).",
+                    "Mikrokapsul Pegagan: Merangsang regenerasi jaringan epitel dan angiogenesis."
+                ],
+                method: "Ultrasonic Extraction & Microencapsulation"
+            },
+            heel: {
+                badge: "Zona Fungsional: Peredam Tekanan",
+                title: "Bantalan Lembut Khusus Tumit",
+                desc: "Titik tumpuan anatomi dengan tekanan vertikal terbesar saat berjalan. Dilapisi hidrogel empuk untuk melindungi kulit dari hiperkeratosis (kalus tebal) yang memicu ulkus dalam.",
+                points: [
+                    "Meredam tekanan vertikal langsung pada sol sepatu.",
+                    "Mencegah tumit pecah-pecah (*cracked heel*) sejak dini."
+                ],
+                method: "Targeted Zonal Hydrogel Coating"
+            },
+            toe: {
+                badge: "Zona Fungsional: Bebas Friksi",
+                title: "Pelindung Jari Kaki Tanpa Kelim",
+                desc: "Konstruksi rajut tanpa kelim kasar (*seamless toe closure*) untuk meminimalkan *shear stress* (friksi gesekan) samping dan atas jari kaki saat mengenakan sepatu.",
+                points: [
+                    "Mengeliminasi gesekan mekanis berulang pada jari kaki.",
+                    "Pelepasan zat aktif basal untuk melindungi mikroklimat sela-sela jari."
+                ],
+                method: "Ergonomic Seamless Weaving"
+            }
+        };
+
+        function updateMaterialSpec(key) {
+            const data = specData[key];
+            if (!data) return;
+
+            document.getElementById('insp-badge').textContent = data.badge;
+            document.getElementById('insp-title').textContent = data.title;
+            document.getElementById('insp-desc').textContent = data.desc;
+            document.getElementById('insp-method').textContent = data.method;
+
+            const pointsEl = document.getElementById('insp-points');
+            pointsEl.innerHTML = data.points.map(p => `
+                <li class="flex items-start gap-2.5">
+                    <i data-lucide="check-circle" class="w-4 h-4 text-botanical shrink-0 mt-0.5"></i>
+                    <span>${p}</span>
+                </li>
+            `).join('');
+
+            lucide.createIcons();
+
+            ['bamboo', 'cmc', 'phyto', 'heel', 'toe'].forEach(k => {
+                const btn = document.getElementById(`tab-${k}`);
+                if (k === key) {
+                    btn.className = 'p-2 rounded-2xl bg-botanical text-white text-xs font-bold text-left transition shadow-sm';
+                } else {
+                    btn.className = 'p-2 rounded-2xl bg-cream-100 text-charcoal text-xs font-bold text-left hover:bg-cream-200 transition';
+                }
+            });
+        }
+    </script>
+</body>
+</html>
